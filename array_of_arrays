@@ -1,0 +1,21 @@
+// Date strings can be flexible. See https://www.w3schools.com/js/js_date_formats.asp for examples.
+let timepoint_list = [
+                       ["1921-10-01", "Event 1"],
+                       ["1921-12-09", "Event 2"],
+                       ["1922-04-01", "Event 3"]
+                       //["", ""],
+                       //["", ""]
+];
+
+// Calculate total time range
+let timerange = Date(timepoint_list[timepoint_list.length - ][0]) - Date(timepoint_list[0][0])
+
+// Re-arrange items in list
+let num_of_timepoints = timepoint_list.length - 1;  // the final timepoint doesn't get a distance b/c you're at the end
+for (let i = 0; i < num_of_timepoints; i++) {
+    let distance = Date(timepoint_list[i+1][0] - Date(timepoint_list[0][0];
+     timepoint_list[1].push(distance / timerange)  // add, to the timepoint, the factional distance if the timerance was a unit of 1
+
+}
+
+console.log(timepoint_list);
