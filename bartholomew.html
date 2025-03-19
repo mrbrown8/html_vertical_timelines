@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>History of Bartholomew Brown ( ~1820 - 1910 )</title>
+
+    <meta charset="utf-8" >
+    <meta name="author" content="Curtis J. Brown <mrbrown8@juno.com>" >
+    <meta name="description" content="" >
+    <meta name="keywords" content="" >
+    <meta name="generator" content="https://github.com/mrbrown8/html_vertical_timelines" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- https://stackoverflow.com/questions/9943771/adding-a-favicon-to-a-static-html-page -->
+    <link rel="icon" type="image/x-icon" href="data:image/gif;base64,R0lGODlhEAAQAOcqAAAAAAEBAQICAgMDAwQEBAUFBQYGBgcHBwgICAkJCQoKCgsLCwwMDA0NDQ4ODg8PDxAQEBERERISEhMTExQUFBUVFRYWFhcXFxgYGBkZGRoaGhsbGxwcHB0dHR4eHh8fHyAgICEhISIiIiMjIyQkJCUlJSYmJicnJygoKCkpKSoqKisrKywsLC0tLS4uLi8vLzAwMDExMTIyMjMzMzQ0NDU1NTY2Njc3Nzg4ODk5OTo6Ojs7Ozw8PD09PT4+Pj8/P0BAQEFBQUJCQkNDQ0REREVFRUZGRkdHR0hISElJSUpKSktLS0xMTE1NTU5OTk9PT1BQUFFRUVJSUlNTU1RUVFVVVVZWVldXV1hYWFlZWVpaWltbW1xcXF1dXV5eXl9fX2BgYGFhYWJiYmNjY2RkZGVlZWZmZmdnZ2hoaGlpaWpqamtra2xsbG1tbW5ubm9vb3BwcHFxcXJycnNzc3R0dHV1dXZ2dnd3d3h4eHl5eXp6ent7e3x8fH19fX5+fn9/f4CAgIGBgYKCgoODg4SEhIWFhYaGhoeHh4iIiImJiYqKiouLi4yMjI2NjY6Ojo+Pj5CQkJGRkZKSkpOTk5SUlJWVlZaWlpeXl5iYmJmZmZqampubm5ycnJ2dnZ6enp+fn6CgoKGhoaKioqOjo6SkpKWlpaampqenp6ioqKmpqaqqqqurq6ysrK2tra6urq+vr7CwsLGxsbKysrOzs7S0tLW1tba2tre3t7i4uLm5ubq6uru7u7y8vL29vb6+vr+/v8DAwMHBwcLCwsPDw8TExMXFxcbGxsfHx8jIyMnJycrKysvLy8zMzM3Nzc7Ozs/Pz9DQ0NHR0dLS0tPT09TU1NXV1dbW1tfX19jY2NnZ2dra2tvb29zc3N3d3d7e3t/f3+Dg4OHh4eLi4uPj4+Tk5OXl5ebm5ufn5+jo6Onp6erq6uvr6+zs7O3t7e7u7u/v7/Dw8PHx8fLy8vPz8/T09PX19fb29vf39/j4+Pn5+fr6+vv7+/z8/P39/f7+/v///yH+EUNyZWF0ZWQgd2l0aCBHSU1QACH5BAEKAPwALAAAAAAQABAAAAhsAP8JHOgPgMGBCBMWPJiw4UIADR0ahBgRYbaJ4Cr+26cLQIUSI96A8xcxmUFi7RjR6LMv4i0AwgS2A4CJZENkAGr1+/cNwCZ4Eed5afFJ2BgAgyrmK+ZlIh99GnlOPBf138OqVidivVqVK8KAADs=" />
+
+    <script>
+
+        // Date strings can be flexible. See https://www.w3schools.com/js/js_date_formats.asp for examples.
+
+        // timepoint_list array elements:
+        // [0]  =  user provided date
+        // [1]  =  user provided event description
+        // [2]  =  calculated JSDate object
+        // [3]  =  calculated relative distance from previous point
+        // [4]  =  calculated
+
+        var timepoint_list = [// YYYY-MM-DD
+                               ["1822", "Bartholomew Brown is born in \"Ireland\" (B.Brown Candian census 1881)"],
+                               ["1824", "Bartholomew Brown arrives in \"New Ireland, P.Q.\"(inferred from B.Brown obit)"],
+                               ["1831", "Bartholomew Brown immigrates to Canada (1901 Census of Canada)"],
+                               ["Dec  7, 1847", "Bartholomew Brown marries Martha Thurber in Leeds P.Q. (Church of England record)"],
+                               ["Dec 30, 1848", "Luella Brown is born"],
+                               ["Apr 10, 1849", "Aveline Martha Brown is born"],
+                               ["May 30, 1851", "Jonathan Brown is born"],
+                               ["Apr  7, 1853", "Bartholomew Brown (Jr) is born"],
+                               ["Dec 29, 1854", "Bartholomew sells land to William Forsyth (Fisher Langlois, notary act # 431)"],
+                               ["Jan 26, 1855", "Lafayette Brown is born"],
+                               ["Feb  8, 1857", "Henry Brown is born"],
+                               ["Feb  8, 1858", "Mary Harriet Brown is born"],
+                               ["May 17, 1860", "Lavina Brown is born"],
+                               ["May  6, 1862", "George Brown is born"],
+                               ["Jul 11, 1862", "Bartholomew Brown buys 100 acres (List of lands granted by the Crown in the P. of Q.)"],
+                               ["Dec 18, 1862", "George Brown dies"],
+                               ["Dec 14, 1864", "Charles Brown is born"],
+                               ["Mar  8, 1866", "Katie Brown is born, in Ireland Twp, P.Q.  (FamilySearch, BAnQ)"],
+                               ["Feb 14, 1868", "Bartholomew Brown leases land from John Baile (William Bignell, notary act # 5558)"],
+                               ["Mar 25, 1868", "Lawrence Brown is born"],
+                               ["Mar 25, 1870", "William Grant Brown is born"],
+                               ["Jul 13, 1872", "Luella, of Martha Thurber, dies (headstone photo)"],
+                               ["Apr 11, 1873", "Martha Thurber dies (B.Brown obit)(headstone photo)"],
+                               ["Aug  3, 1874", "Aveline Martha Brown dies"],
+                               ["Dec 20, 1874", "Bartholomew Brown (Jr) dies"],
+                               ["Oct 17, 1876", "Bartholomew Brown marries Julia Anne (Hall) Barwis/Barnois"],
+                               ["May 11, 1877", "Mary Harriet Brown dies"],
+                               ["Jan 11, 1881", "Lafayette Brown dies (church records)"],
+                               ["Aug 13, 1881", "Lavina marries Elwin L. Hopkins in Lyndon, VT. (Vermont Vital Records)"],
+                               ["Sep 21, 1886", "Charles marries Mary Jannet Thom, in Ireland Township (church records)"],
+                               ["May  3, 1892 ", "William Grant marries Etta Bella Nugent, in Inverness (church records)"],
+                               ["1896", "Julia Barwis/Barnois dies (B.Brown obit)"],
+                               ["May 28, 1896", "Katie E Brown marries William McNeil in Brockton, Mass (Mass Dept of Pub Health)"],
+                               ["Dec  5, 1905", "Bartholomew Brown resides with Grant Brown in St. Johnsbury, VT (St. Johnsbury Caledonian newspaper)"],
+                               ["Aug 27, 1910", "Bartholomew Brown dies (B.Brown obit)(B.Brown death cert)"],
+                               ["Aug 29, 1910", "Bartholomew Brown is buried \"in the family lot at Maple Grove\"."]
+ 
+                               //["", ""],
+                               //["", ""]
+                             ];
+
+        const millisecondsInADay = 1000 * 60 * 60 * 24;
+
+        const num_of_timepoints = timepoint_list.length ;  
+        
+        const months_en = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const months_short_en = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        const daysofweek_en = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const daysofweek_short_en = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat"];
+        const year_jp = "年";  const month_jp = "月";  const day_jp = "日"; 
+        
+        
+        // Add JS Date objects to each row
+        for (let i = 0; i < num_of_timepoints; i++) {
+          let dateobject = new Date(timepoint_list[i][0]);
+          if ( isNaN(dateobject) ) {
+               throw new Error("Bad date format: " + timepoint_list[i][0] + ", entry number: " + i );
+          }
+          timepoint_list[i].push(dateobject);
+        }
+
+
+        // Calculate total time range
+        const startDate = timepoint_list[0][2];
+        const endDate = timepoint_list[num_of_timepoints - 1][2];
+        const timerange = endDate - startDate;
+
+        console.log("timerange is (" + (timerange/millisecondsInADay) + ") days" );
+
+
+        // calculate distances to next timepoint
+        for (let i = 0; i < num_of_timepoints - 1 ; i++) {
+            let distance = timepoint_list[i+1][2] - timepoint_list[i][2];
+            console.log("for " + i + " , distance is " + (distance/millisecondsInADay));
+            timepoint_list[i].push(distance /millisecondsInADay)  // add, to the timepoint, the relative distance to the next point
+
+        }
+        timepoint_list[num_of_timepoints - 1].push(0);   // the last timepoint has no next point to distance to
+        console.log("for " + (num_of_timepoints - 1) + " , distance is " + (timepoint_list[num_of_timepoints - 1][3]));
+
+        // This JS code is in <head> & therfore cannot (yet) refer to HTML elements
+        // Make sure HTML is loaded first, or put JS in <body>
+        // https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup
+        // https://www.javascripttutorial.net/javascript-dom/javascript-domcontentloaded/
+        document.addEventListener('DOMContentLoaded', () => {
+            var ul_element = document.getElementById("timeline_ul");
+
+            for (let i = 0; i < num_of_timepoints; i++) {
+
+                let distance = "";
+                if (timepoint_list[i][3] == 0) {
+                    distance = "";
+                } else {
+                    distance = 'style="margin-bottom:' + timepoint_list[i][3] + 'pt"';
+                }
+                //console.log("for " + i + " , distance is " + (distance) );
+                let li_element = `        <li class="event" data-date="${timepoint_list[i][0]}" ${distance}>\n` 
+                               + `          <p>${timepoint_list[i][1]}</p>\n`
+                               + `        </li>`;
+
+                document.getElementById("timeline_ul").innerHTML += li_element;
+
+            }
+
+            console.log(timepoint_list);
+        });
+
+    </script>
+
+    <style>
+
+    :root {
+
+       /* Import */
+       
+       --import url('https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800');
+       
+       /* Variables */
+       
+       /* --background: #252827; */
+       --background: #fcf5e5;  // parchment
+       --color-primary: #004ffc;
+       --color-light: white;
+       /* --color-dim: #6c6d6d; */
+       --color-dim: black;
+       
+       --date: 120px;
+       --dotborder: 4px;
+       --dot: 11px;
+       --line: 4px;
+       --spacing: 50px;
+       --radius: 4px;
+       
+       --font-title: 'Saira', sans-serif;
+       --font-text: 'Chivo', sans-serif;
+    }
+       
+       /* Base */
+       
+       body {
+         background: var(--background);
+         font-size: 16px;
+       }
+       
+       p {
+         /* font-weight: 300;  */
+       }
+       
+       a { 
+         color: var(--color-dim);
+         text-decoration: none;
+         text-transform: uppercase;
+         display: block;
+         letter-spacing: .3em;
+         font-size: .6em;
+         font-weight: 400;
+         background: #252727;
+         padding: .3rem 1rem;
+         margin: 1.9rem 0 0 0;
+         float: right;
+       }
+       
+       a:hover { 
+         color: var(--color-light);
+         background: var(--color-primary);
+         border-bottom: .35em solid black;
+       }
+       
+       
+       h1 {
+        color: var(--color-dim);  
+        font-family: var(--font-title);
+        font-size: 2.4em;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+       }
+       
+       #timeline-content {
+         margin-top: var(--spacing);
+         text-align: center;  
+       }
+       
+       /* Timeline */
+       
+       .timeline {
+         /* border-left: var(--line) solid var(--color-primary);  */
+         border-left: var(--line) solid black; 
+         border-bottom-right-radius: var(--radius);
+         border-top-right-radius: var(--radius);    
+         background: fade(var(--color-light), 3%);
+         color: fade(white, 80%);
+         font-family: var(--font-text);  
+         font-size: 1.03em;   
+         font-weight: 100;  
+         margin: var(--spacing) auto;  
+         max-width: 40%; 
+         letter-spacing: 0.5px;   
+         line-height: 1.4em;
+         list-style: none;
+         position: relative;
+         padding: var(--spacing);   
+         text-align: left;  
+         
+         h1 {
+          font-family: var(--font-title);
+          color: var(--color-dim); 
+          letter-spacing: 1.5px;
+          font-weight: 100;
+          font-size: 1.4em;    
+         }
+         
+         h2, h3 {
+          color: var(--color-dim);  
+          font-family: var(--font-title);
+          letter-spacing: 1.5px;
+          font-weight: 400;
+          font-size: 1.4em;
+         }
+         
+         .event {
+
+           --background: #fcf5e5;  // parchment-ish;
+           --color-light: white;
+           --color-primary: #000000;
+           --date: 120px;
+           --dot: 11px;
+           --dotborder: 4px;
+           --font-title: 'Saira', sans-serif;
+           --spacing: 50px;
+           --line: 4px;
+
+           /* border-bottom: 1px dashed fade(var(--color-light), 10%); */
+           border-bottom: 1px dashed fade(black, 90%);;
+           /* padding-bottom: calc(var(--spacing) * 0.5);  */
+           /* margin-bottom: var(--spacing);  */
+           position: relative;
+
+       
+           &:last-of-type { 
+             padding-bottom: 0;
+             margin-bottom: 0; 
+             border: none;      
+           }
+       
+           &:before, &:after {
+             position: absolute;
+             display: block;
+             top: 0;
+           }
+       
+           &:before {    /* dates */ 
+             /* variables won't inherit from :root , a seemingly dumb oversight */
+             /* https://stackoverflow.com/questions/12124953/can-the-before-and-after-pseudo-elements-inherit-height-from-the-parent-elemen  */
+             /* https://stackoverflow.com/questions/71462808/why-css-variables-are-not-inherited-in-pseudo-elements */
+
+             left: calc( (((var(--date) * 0.6) + var(--spacing) + var(--line) + var(--dot) + (var(--dotborder) * 2)) * 1.5) * -1 );  
+             color: fade(var(--color-light), 40%);    
+             content: attr(data-date);
+             font-weight: 100;    
+             font-size: 0.9em;
+             font-family: var(--font-title);
+             min-width: var(--date);
+             text-align: right;
+
+           }
+       
+           &:after {    /* circles on the li elements*/  
+             /* variables won't inherit from :root */
+
+             /* box-shadow: 0 0 0 var(--dotborder) fade(var(--color-primary),100%);    */  /* offset-x | offset-y | blur-radius | spread-radius | color */
+             box-shadow: 0 0 0 var(--dotborder) var(--color-primary);    
+             left: calc((var(--spacing) + var(--line) + (var(--dot) * 0.35)) * -1);   
+             /* background: lighten(var(--background),5%);    */
+             background: var(--background);   
+             border-radius: 50%;  
+             height: var(--dot);
+             width: var(--dot);
+             content: "";
+             top: 5px;
+           }
+         }
+       }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="timeline-content">
+
+      <h1 id="inpage-title">Timeline</h1>
+    
+      <ul class="timeline" id="timeline_ul">
+      </ul>
+
+    </div>
+
+
+</body>
+
+</html>
+
+
