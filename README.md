@@ -18,7 +18,7 @@ There are two main goals that this project tries to aim for:
    
 3. Proprtionality between entries
 
-    I also wanted this to stand out in one unique way. The different time-based entires inside should stand near or apart from each other depending on the temporal distances between them. If two events happened relatively close to each other, say in terms of days rather than years, so should they appear on a timeline. If there's a relatively long period of time between two events, they should appear spread out from each other.
+    I also wanted this to stand out in one unique way. The different time-based entires inside should stand near or apart from each other depending on the temporal distances between them. If two events happened relatively close to each other, say in terms of days rather than years, so should they appear closer together on a timeline. If there's a relatively long period of time between two events, they should appear spread out from each other.
 
    This can create interesting consequences for the event data being added.
 
