@@ -4,6 +4,7 @@ grids: https://www.w3schools.com/css/css_grid.asp
 vert lines: https://www.w3schools.com/howto/howto_css_vertical_line.asp
             https://www.delftstack.com/howto/html/html-vertical-line/
             https://freefrontend.com/css-timelines/
+wavy lines: unicode "ALMOST EQUAL TO", HTML &asymp;
 
 # Design Goals
 
