@@ -1,10 +1,7 @@
-# vertical_timelines
+# html_vertical_timelines
 
-grids: https://www.w3schools.com/css/css_grid.asp
-vert lines: https://www.w3schools.com/howto/howto_css_vertical_line.asp
-            https://www.delftstack.com/howto/html/html-vertical-line/
-            https://freefrontend.com/css-timelines/
-wavy lines: unicode "ALMOST EQUAL TO", HTML &asymp;
+Example of intended design:<br>
+![Screenshot of concept](example_concept.png)
 
 # Design Goals
 
@@ -22,6 +19,30 @@ There are two main goals that this project tries to aim for:
 
    This can create interesting consequences for the event data being added.
 
+# Creating Your Own HTML Timeline
+
+1. Download a copy of `example_concept.html`
+2. Open your file with a text editor (notepad, vim, etc.)
+3. Towards the top of the file, look for the `timepoint_list` variable, and add the dates and event descriptions you want.
+4. Towards the bottom of the file, change the `h1` HTML tag to show a more appropriate title inside the page.
+5. Back towards the top of the file, change the `<title>` HTML tag.
+6. Save your changes.
+7. Open your preferred webbrowswer, use its "File" then "Open File..." menu entries to open your `example_concept.html` file you just changed.
+8. Continue making changes or additions to your `example_concept.html` file. Use your brower's Reload button or Ctrl-R to view your new changes.
+9. You can shoose to share your results by emailing your file to friends and family or by upload it to your favorite web provider.
+
+# Credits and Influences
+
+https://codepen.io/alanhouser/pen/aErrQJ<br>
+https://codepen.io/darcyvoutt/pen/ogPrpK/
+
+# coding notes:
+
+grids: https://www.w3schools.com/css/css_grid.asp<br>
+vert lines: https://www.w3schools.com/howto/howto_css_vertical_line.asp<br>
+            https://www.delftstack.com/howto/html/html-vertical-line/<br>
+            https://freefrontend.com/css-timelines/<br>
+wavy lines: unicode "ALMOST EQUAL TO", HTML &asymp;<br>
 
 
    
