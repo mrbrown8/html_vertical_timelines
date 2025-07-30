@@ -43,8 +43,8 @@
     <rect
        style="fill:#f1e9d2;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:2.4;stroke-dasharray:none;stroke-opacity:0.692287;paint-order:markers fill stroke"
        id="rect1"
-       width="12.748"
-       height="12.790931"
+       width="12.7"
+       height="12.7"
        x="-0.042636424"
        y="-0.085272864"
        ry="0" />
@@ -55,8 +55,8 @@
     <circle
        style="display:inline;opacity:1;fill:#f1e9d2;fill-opacity:1;stroke:#000001;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path3090"
-       cx="6.3696175"
-       cy="6.2149029"
-       r="2.5604219" />
+       cx="6.35"
+       cy="6.35"
+       r="2.8604219" />
   </g>
 </svg>
