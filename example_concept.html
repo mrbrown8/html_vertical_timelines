@@ -23,7 +23,7 @@
         // [1]  =  user provided event description
         // [2]  =  calculated JSDate object
         // [3]  =  calculated relative distance from previous point
-        // [4]  =  calculated
+        // [4]  =  calculated percentage of distance to total timerange
 
         var timepoint_list = [// YYYY-MM-DD
                                ["1921-10-01", "Event 1"],
@@ -59,20 +59,22 @@
         // Calculate total time range
         const startDate = timepoint_list[0][2];
         const endDate = timepoint_list[num_of_timepoints - 1][2];
-        const timerange = endDate - startDate;
+        const timerange = ( endDate - startDate ) / millisecondsInADay;
 
-        console.log("timerange is (" + (timerange/millisecondsInADay) + ") days" );
+        console.log("timerange is (" + timerange + ") days" );
 
 
         // calculate distances to next timepoint
         for (let i = 0; i < num_of_timepoints - 1 ; i++) {
-            let distance = timepoint_list[i+1][2] - timepoint_list[i][2];
-            console.log("for " + i + " , distance is " + (distance/millisecondsInADay));
-            timepoint_list[i].push(distance /millisecondsInADay)  // add, to the timepoint, the relative distance to the next point
-
+            let distance = ( timepoint_list[i+1][2] - timepoint_list[i][2] ) / millisecondsInADay;
+            timepoint_list[i].push(distance)  // add, to the timepoint, the relative distance to the next point
+            let percentage = distance  / timerange;  // a decimal ranging from 0.00 to 1.00
+            timepoint_list[i].push(percentage)
+            console.log("for " + i + " , distance is " + distance + ", percentage is " + percentage);
         }
         timepoint_list[num_of_timepoints - 1].push(0);   // the last timepoint has no next point to distance to
         console.log("for " + (num_of_timepoints - 1) + " , distance is " + (timepoint_list[num_of_timepoints - 1][3]));
+
 
         // This JS code is in <head> & therfore cannot (yet) refer to HTML elements
         // Make sure HTML is loaded first, or put JS in <body>
