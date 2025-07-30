@@ -117,14 +117,8 @@
        --color-light: white;
        /* --color-dim: #6c6d6d; */
        --color-dim: black;
-
-       --date: 120px;
-       --dotborder: 4px;
-       --dot: 11px;
        --line: 4px;
        --spacing: 50px;
-       --radius: 4px;
-
        --font-title: 'Helvetica', sans-serif;
        --font-text: 'Times New Roman', serif;
     }
@@ -138,6 +132,7 @@
 
        p {
          /* font-weight: 300;  */
+         margin: 0;
        }
 
        a { 
@@ -211,13 +206,13 @@
           letter-spacing: 1.5px;
          }
 
-         .event {
+         .event {   /* applied to <li> elements */
 
            --background: #fcf5e5;  // parchment;
            --color-light: white;
            --color-primary: #000000;
            --date: 120px;
-           --dot: 11px;
+           --dot: 13px;
            --dotborder: 4px;
            --font-title: 'Helvetica';
            --spacing: 50px;
@@ -271,6 +266,7 @@
              width: var(--dot);
              content: "";
              top: 5px;
+             overflow-y: auto;  /*  we can accomodate big items, but maintain proportional size of container  */
            }
          }
        }
