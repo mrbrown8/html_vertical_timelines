@@ -81,6 +81,7 @@
         // https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup
         // https://www.javascripttutorial.net/javascript-dom/javascript-domcontentloaded/
         document.addEventListener('DOMContentLoaded', () => {
+
             var ul_element = document.getElementById("timeline_ul");
 
             for (let i = 0; i < num_of_timepoints; i++) {
@@ -96,11 +97,18 @@
                     //distance = 'style="height: calc(' + (timepoint_list[i][4])*100 + 'vh - 3 * var(--spacing)"';
                 }
                 //console.log("for " + i + " , distance is " + (distance) );
-                let li_element = `        <li class="event" data-date="${timepoint_list[i][0]}" ${distance}>\n` 
+                let showdate   = months_short_en[timepoint_list[i][2].getMonth()] + " " +
+                                  timepoint_list[i][2].getDate() + ", " + 
+                                  timepoint_list[i][2].getFullYear();
+                let tooltipdate = daysofweek_en[timepoint_list[i][2].getDay()] + ", " + 
+                                  months_en[timepoint_list[i][2].getMonth()] + " " +
+                                  timepoint_list[i][2].getDate() + ", " + 
+                                  timepoint_list[i][2].getFullYear();
+                let li_element = `        <li class="event" data-date="${showdate}" title="${tooltipdate}" ${distance}>\n` 
                                + `          <p>${timepoint_list[i][1]}</p>\n`
                                + `        </li>`;
 
-                document.getElementById("timeline_ul").innerHTML += li_element;
+                timeline_ul.innerHTML += li_element;
 
             }
 
@@ -136,6 +144,8 @@
 
        p {
          /* font-weight: 300;  */
+         /* margin-block-start: 0em */
+         /* margin-block-end: 0em */
          margin: 0;
        }
 
@@ -173,9 +183,9 @@
          text-align: center;  
        }
 
-       /* Timeline */
+       /* Timeline CSS magic*/
 
-       .timeline {
+       .timeline {      /* applied to the <ul> element */
          /* border-left: var(--line) solid var(--color-primary);  */
          border-left: var(--line) solid black; 
          border-bottom-right-radius: var(--radius);
