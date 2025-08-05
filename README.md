@@ -24,12 +24,12 @@ There are two main goals that this project tries to aim for:
 1. Download a copy of `example_concept.html`
 2. Open your file with a text editor (notepad, vim, etc.)
 3. Towards the top of the file, look for the `timepoint_list` variable, and add the dates and event descriptions you want.
-4. Towards the bottom of the file, change the `h1` HTML tag to show a more appropriate title inside the page.
+4. Towards the bottom of the file, change the `<h1>` HTML tag to show a more appropriate title inside the page.
 5. Back towards the top of the file, change the `<title>` HTML tag.
 6. Save your changes.
 7. Open your preferred webbrowswer, use its "File" then "Open File..." menu entries to open your `example_concept.html` file you just changed.
 8. Continue making changes or additions to your `example_concept.html` file. Use your brower's Reload button or Ctrl-R to view your new changes.
-9. You can shoose to share your results by emailing your file to friends and family or by upload it to your favorite web provider.
+9. You can choose to share your results by emailing your file to friends and family or by upload it to your favorite web provider.
 
 # Credits and Influences
 
